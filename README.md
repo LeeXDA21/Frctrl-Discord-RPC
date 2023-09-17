@@ -40,7 +40,7 @@ const clientId = "Your-client-id"; // Your Discord Application ID
     details: "YOUR-TEXT-HERE",
     state: "Your-Text-Here",
     // ... other settings ...
-});
+
 
 ## Usage
 
