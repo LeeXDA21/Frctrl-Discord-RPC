@@ -2,6 +2,7 @@ const RPC = require("discord-rpc");
 const rpc = new RPC.Client({
     transport: "ipc"
 });
+// THIS WAS MADE BY FRCRTL
 
 const clientId = "Your-client-id"; // Your Discord Application ID
 
@@ -17,6 +18,7 @@ rpc.on("ready", () => {
         details: "YOUR-TEXT-HERE",
         state: "Your-Text-Here",
         startTimestamp: new Date(),
+        // Get your images from RPC-Assets on your discord application
         largeImageKey: "Limagekey",
         largeImageText: "Your-Text-Here",
         smallImageKey: "Simagekey",
