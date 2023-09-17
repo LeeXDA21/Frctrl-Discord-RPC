@@ -69,4 +69,6 @@ If you encounter any issues while setting up or running your Discord RPC applica
 
 ## Credits 
 [FRCTRL](https://github.com/frctrl/)
+
+
 [2m4u](https://github.com/2M4U/) For the motivation please check out the amaing Projects He makes!
