@@ -9,7 +9,7 @@ const clientId = config.clientId;
 function connectRPC() {
     rpc.login({ clientId }).catch((err) => {
         console.error(`Failed to connect to Discord RPC, Please restart Discord!: ${err.message}`);
-        setTimeout(connectRPC, 9000); // Retry every 15 seconds
+        setTimeout(connectRPC, 9000); 
     });
 }
 
@@ -18,7 +18,7 @@ rpc.on("ready", () => {
         details: config.details,
         state: config.state,
         startTimestamp: new Date(),
-        // Use the keys defined in your Discord application's assets
+        
         largeImageKey: config.assets.large_image,
         largeImageText: config.assets.large_text,
         smallImageKey: config.assets.small_image,
