@@ -58,7 +58,7 @@ If you encounter any issues while setting up or running your Discord RPC applica
 
 2. Double-check that you have replaced "Your-client-id" in the index.js file with your actual Discord Application ID.
 3. Review the console output for any error messages. If you encounter any errors, they will be displayed there.
-4. Ensure you use the provided image key from the Rich Presence or it will have errors. 
+4. Ensure you use the provided image from either the Rich Presence or a image link overwise it will have errors. 
 
   ## Contributing
   Contributions are welcome! If you have any improvements or feature suggestions, feel free to open an issue or create a pull request.
