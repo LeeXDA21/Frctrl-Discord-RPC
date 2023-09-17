@@ -1,0 +1,31 @@
+{
+    
+    "clientId": "Your Client ID",
+
+    "details": "your-text-here",
+
+    "state": "your-text-here",
+
+    "assets": {
+        "large_image": "Your-assets-image-or-URL",
+        "large_text": "Your-text-here",
+        "small_image": "Your-assets-image-or-URL",
+        "small_text": "your-text-here"
+    },
+
+    "buttons": [
+        {
+            "label1": "Label-of-the-button",
+            "url1": "Link-of-the-button"
+        },
+        {
+            "label2": "Label-of-the-button",
+            "url2": "Link-of-the-button"
+        }
+    ]
+
+
+
+
+    }
+

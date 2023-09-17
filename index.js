@@ -1,10 +1,10 @@
+const config = require("./config.json");
 const RPC = require("discord-rpc");
 const rpc = new RPC.Client({
     transport: "ipc"
 });
-// THIS WAS MADE BY FRCRTL
 
-const clientId = "Your-client-id"; // Your Discord Application ID
+const clientId = config.clientId;
 
 function connectRPC() {
     rpc.login({ clientId }).catch((err) => {
@@ -12,20 +12,20 @@ function connectRPC() {
         setTimeout(connectRPC, 9000); // Retry every 15 seconds
     });
 }
- 
+
 rpc.on("ready", () => {
     rpc.setActivity({
-        details: "YOUR-TEXT-HERE",
-        state: "Your-Text-Here",
+        details: config.details,
+        state: config.state,
         startTimestamp: new Date(),
-        // Get your images from RPC-Assets on your discord application
-        largeImageKey: "Limagekey",
-        largeImageText: "Your-Text-Here",
-        smallImageKey: "Simagekey",
-        smallImageText: "Your-Text-Here",
+        // Use the keys defined in your Discord application's assets
+        largeImageKey: config.assets.large_image,
+        largeImageText: config.assets.large_text,
+        smallImageKey: config.assets.small_image,
+        smallImageText: config.assets.small_text,
         buttons: [
-            { label: "button1", url: "urlgoeshere" },
-            { label: "button2", url: "urlgoeshere" }
+            { label: config.buttons[0].label1, url: config.buttons[0].url1 },
+            { label: config.buttons[1].label2, url: config.buttons[1].url2 },
         ]
     });
 
