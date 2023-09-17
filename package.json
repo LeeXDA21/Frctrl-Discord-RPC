@@ -1,0 +1,14 @@
+{
+  "name": "krowzie-rpc-discord",
+  "version": "1.0.0",
+  "description": "rpc for discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "frctrl",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
