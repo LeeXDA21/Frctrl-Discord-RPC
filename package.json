@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "rpc for discord",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node index.js"
   },
-  "author": "frctrl",
+  "author": "leexda",
   "license": "ISC",
   "dependencies": {
     "discord-rpc": "^4.0.1"

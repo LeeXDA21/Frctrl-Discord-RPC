@@ -1,5 +1,12 @@
-const config = require("./config.json");
-const RPC = require("discord-rpc");
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import RPC from 'discord-rpc';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const config = JSON.parse(readFileSync(join(__dirname, 'config.json'), 'utf-8'));
+
 const rpc = new RPC.Client({
     transport: "ipc"
 });
